@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>
+      PickUp
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../CSS/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      $(window).scroll(function() {
+          if ($(document).scrollTop() > 0) {
+            $("#home_nav_bar").css("background-color", "#ce0300");
+            $("#home_nav_bar").css("opacity", "0.95");
+            $("#home_nav_bar").css("border-bottom", "1px solid grey");
+          } else {
+            $("#home_nav_bar").css("background-color", "transparent");
+            $("#home_nav_bar").css("border-bottom", "none");
+            $("#home_nav_bar").css("opacity", "1");
+          }
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="home_nav_bar">
+      <ul id="home_nav_bar_list">
+        <li class="home_nav_bar_list_text">
+          CHAT
+        </li>
+        <li class="home_nav_bar_list_text">
+          BUY
+        </li>
+        <li class="home_nav_bar_list_text">
+          SELL
+        </li>
+      </ul>
+    </div>
+    <img src="../CSS/Images/honda.png" class="home_picture_slideshow_img">
+    </img>
+
+    <div>
+      <img src="../CSS/Images/notepad.png" class="home_icons">
+      </img>
+
+      <img src="../CSS/Images/dollar.png" class="home_icons">
+      </img>
+
+      <img src="../CSS/Images/support.png" class="home_icons">
+      </img>
+      <div class = "clearfix"></div>
+
+      <p class="home_icons_text">Browse our diverse catalog of thousands of cars to select the perfect one for you to drive home today
+      </p>
+      <p class="home_icons_text">Explore our different financing options to find what pricing plan works for your budget
+      </p>
+      <p class="home_icons_text">Chat with a live specialist to answer any and all questions you may have
+      </p>
+      <div class = "clearfix"></div>
+
+    </div>
+
+
+    <div id="home_footer">
+    </div>
+  </body>
+</html>
