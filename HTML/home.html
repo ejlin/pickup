@@ -12,12 +12,14 @@
       $(window).scroll(function() {
           if ($(document).scrollTop() > 0) {
             $("#home_nav_bar").css("background-color", "#ce0300");
-            $("#home_nav_bar").css("opacity", "0.75");
+            $("#home_nav_bar").css("opacity", "1");
             $("#home_nav_bar").css("border-bottom", "1px solid white");
+            $("#home_nav_bar_search").css("display", "block");
           } else {
             $("#home_nav_bar").css("background-color", "transparent");
             $("#home_nav_bar").css("border-bottom", "none");
             $("#home_nav_bar").css("opacity", "1");
+            $("#home_nav_bar_search").css("display", "none");
           }
       });
     </script>
@@ -25,6 +27,8 @@
 
   <body>
     <div id="home_nav_bar">
+      <a href="home.html"><img src="../CSS/Images/logo.png" id="home_logo"></img></a>
+      <input type="text" placeholder="Search" name="search" id="home_nav_bar_search"></input>
       <ul id="home_nav_bar_list">
         <li class="home_nav_bar_list_text">
           CHAT
