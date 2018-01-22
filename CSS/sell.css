@@ -11,6 +11,7 @@ html, body {
 body
 {
   min-width: 1500px;
+  background-color: #dddfe2;
 }
 
 .clearfix{
@@ -30,18 +31,76 @@ input:focus
 
 #sell_form
 {
-  background-color: #dddfe2;
-  height: 900px;
+  background-color: white;
+  height: 950px;
   width: 1100px;
   max-width: 1100px;
   min-width: 1100px;
   margin-left: calc((100% - 1100px)/2);
+  border-radius: 5px;
 }
 
 #sell_form_title
 {
   color: #ce0300;
   font-size: 32px;
-  margin: 25px 0px 0px 50px;
+  margin: 25px 0px 0px 10%;
   padding-top: 40px;
+}
+
+.sell_input
+{
+  background-color: #ce0300;
+  color: white;
+  font-size: 24px;
+  border: none;
+  padding: 15px 0px 15px 25px;
+  width: 80%;
+  margin-left: calc(10% - 12.5px);
+  margin-top: 40px;
+  border-radius: 5px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+
+#sell_list_button
+{
+  background-color: #ce0300;
+  color: white;
+  font-size: 24px;
+  width: 20%;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 40%;
+  margin-top: 50px;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#sell_list_button:hover
+{
+  opacity: 0.7;
+}
+
+#sell_upload_button
+{
+  background-color: #dddfe2;
+  width: calc(80%);
+  margin-top: 40px;
+  margin-left: calc(10% - 12.5px);
+  border-radius: 5px;
+  padding: 15px 0px 15px 25px;
+  color: #ce0300;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#sell_upload_button:hover
+{
+  opacity: 0.7;
 }
