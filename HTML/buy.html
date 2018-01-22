@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>
+      PickUp
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../CSS/home.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/buy.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+            scrollTop: $(hash).offset().top
+            }, 800, function(){
+            window.location.hash = hash;
+            });
+          }
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="home_nav_bar">
+      <a href="home.html"><img src="../CSS/Images/logo.png" id="home_logo"></img></a>
+      <input type="text" placeholder="Search" name="search" id="buy_nav_bar_search"></input>
+      <ul id="home_nav_bar_list">
+        <li class="home_nav_bar_list_text">
+          CHAT
+        </li>
+        <a href="buy.html">
+          <li class="home_nav_bar_list_text">
+            BUY
+          </li>
+        </a>
+        <li class="home_nav_bar_list_text">
+          SELL
+        </li>
+      </ul>
+    </div>
+    <div class = "clearfix"></div>
+    <a href="#SPORT">
+      <div class="buy_icons_box" id="buy_icons_first">
+        <img src="../CSS/Images/sport.png" class="buy_icons"></img>
+        <p class="buy_icons_text">Sport</p>
+    </div>
+    </a>
+    <a href="#SEDAN">
+      <div class="buy_icons_box">
+        <img src="../CSS/Images/sedan.png" class="buy_icons"></img>
+        <p class="buy_icons_text">Sedan</p>
+      </div>
+    </a>
+    <a href="#MINIVAN">
+      <div class="buy_icons_box">
+        <img src="../CSS/Images/mini-van.png" class="buy_icons"></img>
+        <p class="buy_icons_text">Mini Van</p>
+      </div>
+    </a>
+    <a href="#SUV">
+      <div class="buy_icons_box">
+        <img src="../CSS/Images/suv.png" class="buy_icons"></img>
+        <p class="buy_icons_text">SUV</p>
+      </div>
+    </a>
+    <a href="#HYBRID">
+      <div class="buy_icons_box">
+        <img src="../CSS/Images/hybrid.png" class="buy_icons"></img>
+        <p class="buy_icons_text">Hybrid</p>
+      </div>
+    </a>
+
+    <div class = "clearfix"></div>
+
+    <div class="buy_type_box">
+      <p class="buy_type_title" id="SPORT">
+        Sport
+      </p>
+      <div class="buy_type_image_box" id="buy_type_image_box_first">
+        <img src="../CSS/Images/sport_mercedes.png" class="buy_type_image">
+        </img>
+        <p class="buy_type_image_text">Mercedes Benz SLS</p>
+        <p class="buy_type_image_text">Year: 2014</p>
+        <p class="buy_type_image_text">Asking Price: $188,800</p>
+        <p class="buy_type_image_text">Color: Yellow</p>
+        <p class="buy_type_image_text">Mileage: 34k miles</p>
+      </div>
+      <div class="buy_type_image_box">
+        <img src="../CSS/Images/sport_ferrari.png" class="buy_type_image">
+        </img>
+        <p class="buy_type_image_text">Ferrari California</p>
+        <p class="buy_type_image_text">Year: 2016</p>
+        <p class="buy_type_image_text">Asking Price: $140,200</p>
+        <p class="buy_type_image_text">Color: Blue</p>
+        <p class="buy_type_image_text">Mileage: 6.5k miles</p>
+      </div>
+      <div class="buy_type_image_box">
+        <img src="../CSS/Images/sport_chevy.png" class="buy_type_image">
+        </img>
+        <p class="buy_type_image_text">Chevrolet SS</p>
+        <p class="buy_type_image_text">Year: 2017</p>
+        <p class="buy_type_image_text">Asking Price: $34,000</p>
+        <p class="buy_type_image_text">Color: Red</p>
+        <p class="buy_type_image_text">Mileage: 3.2k miles</p>
+      </div>
+    </div>
+    <div class = "clearfix"></div>
+
+    <div class="buy_type_box">
+      <p class="buy_type_title" id="SEDAN">
+        Sedan
+      </p>
+      <div class="buy_type_image_box" id="buy_type_image_box_first">
+        <img src="../CSS/Images/sedan_honda.jpg" class="buy_type_image">
+        </img>
+        <p class="buy_type_image_text">Honda Accord</p>
+        <p class="buy_type_image_text">Year: 2017</p>
+        <p class="buy_type_image_text">Asking Price: $26,500</p>
+        <p class="buy_type_image_text">Color: Black</p>
+        <p class="buy_type_image_text">Mileage: 7.8k miles</p>
+      </div>
+      <div class="buy_type_image_box">
+        <img src="../CSS/Images/sedan_toyota.png" class="buy_type_image">
+        </img>
+        <p class="buy_type_image_text">Toyota Camry</p>
+        <p class="buy_type_image_text">Year: 2013</p>
+        <p class="buy_type_image_text">Asking Price: $7,600</p>
+        <p class="buy_type_image_text">Color: Gray</p>
+        <p class="buy_type_image_text">Mileage: 82k miles</p>
+      </div>
+      <div class="buy_type_image_box">
+        <img src="../CSS/Images/sedan_nissan.png" class="buy_type_image">
+        </img>
+        <p class="buy_type_image_text">Nissan Sentra</p>
+        <p class="buy_type_image_text">Year: 2014</p>
+        <p class="buy_type_image_text">Asking Price: $16,500</p>
+        <p class="buy_type_image_text">Color: White</p>
+        <p class="buy_type_image_text">Mileage: 45k miles</p>
+      </div>
+    </div>
+
+    <div class = "clearfix"></div>
+
+
+    <div class="buy_type_box">
+      <p class="buy_type_title" id="MINIVAN">
+        Mini Van
+      </p>
+      <div class="buy_type_image_box" id="buy_type_image_box_first">
+        <img src="../CSS/Images/sport_mercedes.png" class="buy_type_image">
+        </img>
+        <p class="buy_type_image_text">Mercedes Benz SLS</p>
+        <p class="buy_type_image_text">Year: 2014</p>
+        <p class="buy_type_image_text">Asking Price: $188,800</p>
+        <p class="buy_type_image_text">Color: Yellow</p>
+        <p class="buy_type_image_text">Mileage: 34k miles</p>
+      </div>
+      <div class="buy_type_image_box">
+        <img src="../CSS/Images/sport_ferrari.png" class="buy_type_image">
+        </img>
+        <p class="buy_type_image_text">Ferrari California</p>
+        <p class="buy_type_image_text">Year: 2016</p>
+        <p class="buy_type_image_text">Asking Price: $140,200</p>
+        <p class="buy_type_image_text">Color: Blue</p>
+        <p class="buy_type_image_text">Mileage: 6.5k miles</p>
+      </div>
+      <div class="buy_type_image_box">
+        <img src="../CSS/Images/sport_chevy.png" class="buy_type_image">
+        </img>
+        <p class="buy_type_image_text">Chevrolet SS</p>
+        <p class="buy_type_image_text">Year: 2017</p>
+        <p class="buy_type_image_text">Asking Price: $34,000</p>
+        <p class="buy_type_image_text">Color: Red</p>
+        <p class="buy_type_image_text">Mileage: 3.2k miles</p>
+      </div>
+    </div>
+
+    <div class = "clearfix"></div>
+
+
+    <div class="buy_type_box">
+      <p class="buy_type_title" id="SUV">
+        SUV
+      </p>
+      <div class="buy_type_image_box" id="buy_type_image_box_first">
+        <img src="../CSS/Images/sport_mercedes.png" class="buy_type_image">
+        </img>
+        <p class="buy_type_image_text">Mercedes Benz SLS</p>
+        <p class="buy_type_image_text">Year: 2014</p>
+        <p class="buy_type_image_text">Asking Price: $188,800</p>
+        <p class="buy_type_image_text">Color: Yellow</p>
+        <p class="buy_type_image_text">Mileage: 34k miles</p>
+      </div>
+      <div class="buy_type_image_box">
+        <img src="../CSS/Images/sport_ferrari.png" class="buy_type_image">
+        </img>
+        <p class="buy_type_image_text">Ferrari California</p>
+        <p class="buy_type_image_text">Year: 2016</p>
+        <p class="buy_type_image_text">Asking Price: $140,200</p>
+        <p class="buy_type_image_text">Color: Blue</p>
+        <p class="buy_type_image_text">Mileage: 6.5k miles</p>
+      </div>
+      <div class="buy_type_image_box">
+        <img src="../CSS/Images/sport_chevy.png" class="buy_type_image">
+        </img>
+        <p class="buy_type_image_text">Chevrolet SS</p>
+        <p class="buy_type_image_text">Year: 2017</p>
+        <p class="buy_type_image_text">Asking Price: $34,000</p>
+        <p class="buy_type_image_text">Color: Red</p>
+        <p class="buy_type_image_text">Mileage: 3.2k miles</p>
+      </div>
+    </div>
+
+    <div class = "clearfix"></div>
+
+
+    <div class="buy_type_box">
+      <p class="buy_type_title" id="HYBRID">
+        Hybrid
+      </p>
+      <div class="buy_type_image_box" id="buy_type_image_box_first">
+        <img src="../CSS/Images/sport_mercedes.png" class="buy_type_image">
+        </img>
+        <p class="buy_type_image_text">Mercedes Benz SLS</p>
+        <p class="buy_type_image_text">Year: 2014</p>
+        <p class="buy_type_image_text">Asking Price: $188,800</p>
+        <p class="buy_type_image_text">Color: Yellow</p>
+        <p class="buy_type_image_text">Mileage: 34k miles</p>
+      </div>
+      <div class="buy_type_image_box">
+        <img src="../CSS/Images/sport_ferrari.png" class="buy_type_image">
+        </img>
+        <p class="buy_type_image_text">Ferrari California</p>
+        <p class="buy_type_image_text">Year: 2016</p>
+        <p class="buy_type_image_text">Asking Price: $140,200</p>
+        <p class="buy_type_image_text">Color: Blue</p>
+        <p class="buy_type_image_text">Mileage: 6.5k miles</p>
+      </div>
+      <div class="buy_type_image_box">
+        <img src="../CSS/Images/sport_chevy.png" class="buy_type_image">
+        </img>
+        <p class="buy_type_image_text">Chevrolet SS</p>
+        <p class="buy_type_image_text">Year: 2017</p>
+        <p class="buy_type_image_text">Asking Price: $34,000</p>
+        <p class="buy_type_image_text">Color: Red</p>
+        <p class="buy_type_image_text">Mileage: 3.2k miles</p>
+      </div>
+    </div>
+
+    <div class = "clearfix"></div>
+
+
+    <div id="home_footer">
+      <div id="home_footer_inside_box">
+        <p class="home_footer_inside_box_text">
+          PickUp
+        </p>
+        <p class="home_footer_inside_box_text">
+          About Us
+        </p>
+        <p class="home_footer_inside_box_text">
+          Contact Us
+        </p>
+        <a href="buy.html">
+          <p class="home_footer_inside_box_text">
+            Buy
+          </p>
+        </a>
+        <p class="home_footer_inside_box_text">
+          Sell
+        </p>
+        <p class="home_footer_inside_box_text">
+          Careers
+        </p>
+        <div class = "clearfix"></div>
+        <p id="home_footer_inside_box_copyright_text">
+          Copyright &copy; 2018. &nbsp; Property of Eric Lin and Matthew Yu. &nbsp; Developed exclusively for WI18 CSE 134B
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

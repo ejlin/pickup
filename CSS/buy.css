@@ -1,0 +1,154 @@
+* {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  min-width: 1500px;
+}
+
+.clearfix{
+    clear:both;
+}
+
+input:focus
+{
+  outline: none;
+}
+
+#home_nav_bar
+{
+  background-color:#ce0300;
+  border-bottom: 1px solid white;
+  z-index: 2;
+  min-width: 1500px;
+}
+
+.buy_icons
+{
+  background-color: #ce0300;
+  border-radius: 50px;
+  width: 75px;
+  height: 75px;
+  padding: 10px;
+  margin-top: 125px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.buy_icons:hover
+{
+  opacity: 0.7;
+}
+
+#buy_icons_first
+{
+  margin-left: calc((100% - 1100px)/2);
+}
+
+#buy_nav_bar_search
+{
+  width: 500px;
+  float: left;
+  padding: 5px 10px 5px 20px;
+  border: solid 1px #dddfe2;
+  border-radius: 25px;
+  font-size: 16px;
+  margin-top: 17.5px;
+  margin-left: 300px;
+}
+
+.buy_icons_text
+{
+  color: #ce0300;
+  font-size: 22px;
+  text-align: center;
+  margin-left: 7.5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.buy_icons_text:hover
+{
+  opacity: 0.7;
+}
+
+.buy_icons_box
+{
+  width: 85px;
+  height: 200px;
+  float: left;
+  margin-left: calc((1100px - 425px) / 4);
+  margin-bottom: 100px;
+}
+
+.buy_type_title
+{
+  color: #ce0300;
+  background-color: #dddfe2;
+  font-size: 28px;
+  padding: 10px 0px 10px 35px;
+  border-radius: 25px;
+  margin-left: calc((100% - 1100px)/2);
+  width: 1075px;
+  transition: 0.5s;
+}
+
+.buy_type_title:hover
+{
+  opacity: 0.7;
+}
+
+.buy_type_box
+{
+
+}
+
+.buy_type_image_box
+{
+  background-color: #ce0300;
+  width: 250px;
+  height: 370px;
+  margin-left: calc((1020px - 735px) / 3);
+  float: left;
+  transition: 0.5s;
+  border-radius: 5px;
+  border: 1px solid #dddfe2;
+  margin-bottom: 25px;
+}
+
+.buy_type_image
+{
+  width: 225px;
+  height: 150px;
+  border: 2px solid white;
+  margin-top: 11.5px;
+  float: left;
+  margin-left: 11.5px;
+  margin-bottom: 15px;
+}
+
+#buy_type_image_box_first
+{
+  margin-left: calc((100% - 930px)/2);
+}
+
+.buy_type_image_box:hover
+{
+  opacity: 0.8;
+  margin-top: -10px;
+}
+
+.buy_type_image_text
+{
+  color: white;
+  font-size: 16px;
+  margin-left: 25px;
+}
