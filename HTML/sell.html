@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>
+      PickUp
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../CSS/home.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/buy.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/sell.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+            scrollTop: $(hash).offset().top
+            }, 800, function(){
+            window.location.hash = hash;
+            });
+          }
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="home_nav_bar">
+      <a href="home.html"><img src="../CSS/Images/logo.png" id="home_logo"></img></a>
+      <input type="text" placeholder="Search" name="search" id="buy_nav_bar_search"></input>
+      <ul id="home_nav_bar_list">
+        <li class="home_nav_bar_list_text">
+          CHAT
+        </li>
+        <a href="buy.html">
+          <li class="home_nav_bar_list_text">
+            BUY
+          </li>
+        </a>
+        <a href="sell.html">
+          <li class="home_nav_bar_list_text">
+            SELL
+          </li>
+        </a>
+      </ul>
+    </div>
+    <div class = "clearfix"></div>
+
+    <div id="sell_form_padding">
+    </div>
+    <div class = "clearfix"></div>
+
+    <div id="sell_form">
+      <p id="sell_form_title">Sell your Vehicle
+      </p>
+    </div>
+
+    <div id="home_footer">
+      <div id="home_footer_inside_box">
+        <p class="home_footer_inside_box_text">
+          PickUp
+        </p>
+        <p class="home_footer_inside_box_text">
+          About Us
+        </p>
+        <p class="home_footer_inside_box_text">
+          Contact Us
+        </p>
+        <a href="buy.html">
+          <p class="home_footer_inside_box_text">
+            Buy
+          </p>
+        </a>
+        <a href="sell.html">
+          <p class="home_footer_inside_box_text">
+            Sell
+          </p>
+        </a>
+        <p class="home_footer_inside_box_text">
+          Careers
+        </p>
+        <div class = "clearfix"></div>
+        <p id="home_footer_inside_box_copyright_text">
+          Copyright &copy; 2018. &nbsp; Property of Eric Lin and Matthew Yu. &nbsp; Developed exclusively for WI18 CSE 134B
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

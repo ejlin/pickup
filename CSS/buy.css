@@ -24,7 +24,7 @@ input:focus
 
 #home_nav_bar
 {
-  background-color:#ce0300;
+  background-color: #ce0300;
   border-bottom: 1px solid white;
   z-index: 2;
   min-width: 1500px;

@@ -1,0 +1,47 @@
+* {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  min-width: 1500px;
+}
+
+.clearfix{
+    clear:both;
+}
+
+input:focus
+{
+  outline: none;
+}
+
+#sell_form_padding
+{
+  width: 100%;
+  height: 150px;
+}
+
+#sell_form
+{
+  background-color: #dddfe2;
+  height: 900px;
+  width: 1100px;
+  max-width: 1100px;
+  min-width: 1100px;
+  margin-left: calc((100% - 1100px)/2);
+}
+
+#sell_form_title
+{
+  color: #ce0300;
+  font-size: 32px;
+  margin: 25px 0px 0px 50px;
+  padding-top: 40px;
+}
