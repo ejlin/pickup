@@ -32,7 +32,7 @@ input:focus
 #sell_form
 {
   background-color: white;
-  height: 950px;
+  height: 1050px;
   width: 1100px;
   max-width: 1100px;
   min-width: 1100px;
@@ -59,10 +59,6 @@ input:focus
   margin-left: calc(10% - 12.5px);
   margin-top: 40px;
   border-radius: 5px;
-}
-
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: white;
 }
 
 #sell_list_button
@@ -103,4 +99,8 @@ input:focus
 #sell_upload_button:hover
 {
   opacity: 0.7;
+}
+
+.sell_input::placeholder { /* Chrome/Opera/Safari */
+  color: white;
 }

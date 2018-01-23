@@ -9,7 +9,9 @@
     <link rel="stylesheet" type="text/css" href="../CSS/home.css">
     <link rel="stylesheet" type="text/css" href="../CSS/buy.css">
     <link rel="stylesheet" type="text/css" href="../CSS/sell.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/chat.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../JavaScript/chat.js"></script>
     <script>
       $(document).ready(function(){
         $("a").on('click', function(event) {
@@ -55,21 +57,15 @@
     </div>
     <div class = "clearfix"></div>
 
-    <div id="sell_form">
-      <p id="sell_form_title">Sell your Vehicle
-      </p>
-      <form>
-        <input type="text" placeholder="First Name" class="sell_input" required></input>
-        <input type="text" placeholder="Last Name" class="sell_input" required></input>
-        <input type="text" placeholder="Email" class="sell_input" required></input>
-        <input type="text" placeholder="Car Model" class="sell_input" required></input>
-        <input type="number" maxlength=4 placeholder="Year" class="sell_input" required></input>
-        <input type="text" placeholder="Color" class="sell_input" required></input>
-        <input type="number" maxlength=8 placeholder="Asking Price (USD)" class="sell_input" required></input>
-        <div id="sell_upload_button">Upload Images</div>
-        <div id="sell_list_button">List!</div>
-      </form>
+    <p id="chat_title">Talk with a representative!</p>
+    <div id="chat_form">
+      <img class="chat_avatar" src="../CSS/Images/chat_avatar.png"></img>
+      <p class="chat_sender">Hello! My name is Mat! How can I help you this fine day? I'm programmed to help you
+      with (a) Vehicles, (b) Financing, (c) Buying, (d) Selling, (e) Other!</p>
     </div>
+    <textarea id="chat_input" type="text" class="chat_input" required placeholder="Message"></textarea>
+    <div id="chat_send_button" onclick="send_chat()">Send</div>
+    <div class = "clearfix"></div>
 
     <div id="home_footer">
       <div id="home_footer_inside_box">
@@ -103,5 +99,17 @@
         </p>
       </div>
     </div>
+    <script>
+      $("#chat_input").on('keypress', function (e) {
+        if (e.keyCode == 13 && e.shiftKey)
+        {
+          $("#chat_input").val( $("#chat_input").val() + "\n");
+        }
+        if (e.keyCode == 10 || e.keyCode == 13) {
+          e.preventDefault();
+          send_chat();
+        }
+      });
+    </script>
   </body>
 </html>
