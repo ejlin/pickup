@@ -93,7 +93,7 @@ textarea:focus {
 .chat_sender
 {
   font-size: 16px;
-  padding: 15px 20px 15px 20px;
+  padding: 5px 17.5px 5px 17.5px;
   background-color: #ce0300;
   display: inline-block;
   max-width: 300px;
@@ -116,7 +116,7 @@ textarea:focus {
 .chat_customer
 {
   font-size: 16px;
-  padding: 15px 20px 15px 20px;
+  padding: 5px 17.5px 5px 17.5px;
   background-color: gray;
   display: inline-block;
   max-width: 300px;
