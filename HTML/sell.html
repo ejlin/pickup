@@ -10,21 +10,6 @@
     <link rel="stylesheet" type="text/css" href="../CSS/buy.css">
     <link rel="stylesheet" type="text/css" href="../CSS/sell.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        $("a").on('click', function(event) {
-          if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-            scrollTop: $(hash).offset().top
-            }, 800, function(){
-            window.location.hash = hash;
-            });
-          }
-        });
-      });
-    </script>
   </head>
 
   <body>
@@ -49,11 +34,11 @@
         </a>
       </ul>
     </div>
-    <div class = "clearfix"></div>
+    <!--<div class = "clearfix"></div>-->
 
     <div id="sell_form_padding">
     </div>
-    <div class = "clearfix"></div>
+    <!--<div class = "clearfix"></div>-->
 
     <div id="sell_form">
       <p id="sell_form_title">Sell your Vehicle
