@@ -122,6 +122,7 @@ input:focus
   border-radius: 5px;
   border: 1px solid #dddfe2;
   margin-bottom: 25px;
+  cursor: pointer;
 }
 
 .buy_type_image
@@ -151,4 +152,159 @@ input:focus
   color: white;
   font-size: 16px;
   margin-left: 25px;
+}
+
+#to_show
+{
+  width: 1100px;
+  height: 1150px;
+  background-color: #ce0300;
+  border-radius: 5px;
+  max-width: 1100px;
+  min-width: 1100px;
+  margin-left: calc((100% - 1100px)/ 2);
+  display: none;
+  margin-top: 125px;
+}
+
+#to_show_image
+{
+  border: 2px solid white;
+  width: 380px;
+  height: 260px;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  float: left;
+}
+
+#to_show_title
+{
+  color: white;
+  font-size: 48px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.to_show_text_small
+{
+  color: #ce0300;
+  font-size: 24px;
+  background-color: white;
+  border-radius: 25px;
+  padding: 5px 0px 5px 25px;
+  width: 485px;
+}
+
+.to_show_text
+{
+  color: #ce0300;
+  font-size: 24px;
+  margin-left: 50px;
+  background-color: white;
+  margin-right: 50px;
+  border-radius: 25px;
+  padding: 10px 0px 10px 25px;
+  margin-bottom: 40px;
+}
+
+#to_show_right
+{
+  float: left;
+  margin-left: 100px;
+}
+
+#to_show_finance
+{
+  width: calc(100% - 100px);
+  margin-left: 50px;
+  font-size: 24px;
+  border-radius: 25px;
+  height: 48px;
+  color: #ce0300;
+  margin-top: 40px;
+}
+
+#to_show_features
+{
+  width: 450px;
+  background-color: white;
+  height: 360px;
+  margin-left: 50px;
+  border-radius: 25px;
+  font-size: 24px;
+  color: #ce0300;
+  padding: 10px 0px 0px 25px;
+  float: left;
+}
+
+#to_show_buy_button
+{
+  float: left;
+  font-size: 24px;
+  width: 100px;
+  background-color: #dddfe2;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  border-radius: 25px;
+  color: #ce0300;
+  margin-top: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#to_show_buy_button:hover
+{
+  opacity: 0.9;
+}
+
+#to_show_cancel_button
+{
+  float: left;
+  font-size:24px;
+  color: white;
+  margin-top: 55px;
+  width: 120px;
+  margin-left: calc((100% - 240px)/2);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#to_show_cancel_button:hover
+{
+  opacity: 0.7;
+}
+
+#to_show_payment
+{
+  width: 450px;
+  height: 370px;
+  background-color: white;
+  border-radius: 25px;
+  float: right;
+  margin-right: 50px;
+}
+
+.to_show_input
+{
+  border:none;
+  width: 80%;
+  background-color: #ce0300;
+  color: white;
+  font-size: 24px;
+  padding: 5px 0px 5px 25px;
+  margin-left: calc(10% - 12.5px);
+  margin-top: 30px;
+  border-radius: 25px;
+}
+
+.to_show_input::placeholder
+{
+  color: white;
+}
+
+#to_show_padding
+{
+  display: none;
+  height: 50px;
 }
