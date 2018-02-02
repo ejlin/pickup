@@ -10,6 +10,7 @@ html, body {
 
 body
 {
+  overflow-x: none;
   /*min-width: 1500px;*/
 }
 
@@ -39,25 +40,31 @@ input:focus
   height: 70px;
   position: fixed;
   transition: 0.5s;
+  display: inline-block;
+  text-align: center;
 }
 
-#home_nav_bar_list
-{
-  float: right;
-  margin-right: calc((100% - 1300px) / 2);
-}
 
 #home_nav_bar_search
 {
   display: none;
-  width: 500px;
-  float: left;
+  width: 30%;
+  float: none;
   padding: 5px 10px 5px 20px;
   border: solid 1px #dddfe2;
   border-radius: 25px;
   font-size: 16px;
   margin-top: 17.5px;
-  margin-left: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  /*margin-left: 300px;*/
+}
+
+#home_nav_bar_list
+{
+  /*float: inline;*/
+  /*margin-right: calc((100% - 1300px) / 2);*/
+  float: right;
 }
 
 .home_nav_bar_list_text
@@ -144,7 +151,7 @@ input:focus
 
 #home_abilities_box_first
 {
-  margin-left: calc((100% - 1050px) / 2);
+  /*margin-left: calc((100% - 1050px) / 2);*/
 }
 
 .home_button:hover
@@ -193,7 +200,16 @@ input:focus
 @media only screen and (max-width:620px) {
   #home_logo
   {
-    margin-left: 100px;
+    float: none;
   }
+
+  #home_nav_bar
+  {
+    height: 120px;
+    display: inline-block;
+    text-align: center;
+  }
+
+
 
 }
