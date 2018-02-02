@@ -9,7 +9,9 @@
     <link rel="stylesheet" type="text/css" href="../CSS/home.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
+      var isMobile = /Android|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
       $(window).scroll(function() {
+        if (!isMobile) {
           if ($(document).scrollTop() > 0) {
             $("#home_nav_bar").css("background-color", "#ce0300");
             $("#home_nav_bar").css("opacity", "1");
@@ -21,6 +23,7 @@
             $("#home_nav_bar").css("opacity", "1");
             $("#home_nav_bar_search").css("display", "none");
           }
+        }
       });
     </script>
   </head>
@@ -47,7 +50,7 @@
         </a>
       </ul>
     </div>
-    <img src="../CSS/Images/prius_home.png" class="home_picture_slideshow_img"></img>
+    <img src="../CSS/Images/home.png" class="home_picture_slideshow_img"></img>
 
     <div>
       <div class="home_abilities_box" id="home_abilities_box_first">
