@@ -20,7 +20,7 @@ function send_chat()
     if (!customer)
     {
       var avatar = document.createElement("IMG");
-      avatar.src = "../CSS/Images/chat_avatar_customer.png";
+      avatar.src = "Images/chat_avatar_customer.png";
       avatar.className += " chat_avatar_customer";
       chat_form.appendChild(avatar);
     }
@@ -90,7 +90,7 @@ function output(to_output, contact)
   if (customer)
   {
     var avatar = document.createElement("IMG");
-    avatar.src = "../CSS/Images/chat_avatar.png";
+    avatar.src = "Images/chat_avatar.png";
     avatar.className += " chat_avatar";
     chat_form.appendChild(avatar);
   }
@@ -113,7 +113,7 @@ function output(to_output, contact)
     contact_link.style.color = "#FFFF00";
     contact_link.onclick = function()
     {
-      window.location.href = "../HTML/home.html";
+      window.location.href = "../HTML/index.html";
     }
     var new_clear_fix_div = document.createElement("DIV");
 
