@@ -3,14 +3,15 @@ import React from 'react';
 class App extends React.Component {
   render() {
     return (
-      <BackgroundImage/>
+      <BuyBox/>
     );
   }
 }
 
-class BackgroundImage extends React.Component {
+class BuyBox extends React.Component {
   render() {
     return (
+    <h1>Hello World </h1>
     )
   }
 

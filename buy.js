@@ -34,8 +34,3 @@ function hide_to_show()
   to_show.style.display = "none";
   to_show_padding.style.display = "none";
 }
-
-function buy_car()
-{
-  
-}
