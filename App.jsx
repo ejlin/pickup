@@ -1,12 +1,19 @@
 import React from 'react';
 
 class App extends React.Component {
-  render() {  
+  render() {
     return (
-      <div>
-        Hello World!!!
-      </div>
+      <BackgroundImage/>
     );
   }
 }
+
+class BackgroundImage extends React.Component {
+  render() {
+    return (
+    )
+  }
+
+}
+
 export default App;

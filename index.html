@@ -9,22 +9,24 @@
     <link rel="stylesheet" type="text/css" href="home.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-      var isMobile = /Android|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+    /*  var isMobile = /Android|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
       $(window).scroll(function() {
         if (!isMobile) {
           if ($(document).scrollTop() > 0) {
             $("#home_nav_bar").css("background-color", "#ce0300");
             $("#home_nav_bar").css("opacity", "1");
-            $("#home_nav_bar").css("border-bottom", "1px solid white");
+            $("#home_nav_bar").css("height", "60.2px");
+            $("#home_nav_bar").css("border-bottom", "0.2px solid #d3d3d3");
             $("#home_nav_bar_search").css("display", "inline-block");
           } else {
             $("#home_nav_bar").css("background-color", "transparent");
             $("#home_nav_bar").css("border-bottom", "none");
+            $("#home_nav_bar").css("height", "60px");
             $("#home_nav_bar").css("opacity", "1");
             $("#home_nav_bar_search").css("display", "none");
           }
         }
-      });
+      });*/
     </script>
   </head>
 
@@ -51,7 +53,32 @@
         </a>
       </ul>
     </div>
-    <img src="Images/home.png" class="home_picture_slideshow_img"></img>
+
+    <video width="100%" height="121.6%" autoplay="autoplay" loop style="margin-top: -10%; margin-bottom: -7px;">
+      <source src="home.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          <a href="sell.html">
+            <div class="home_button" id="home_button_first">
+              Sell your car
+            </div>
+          </a>
+          <a href="buy.html">
+            <div class="home_button">
+              Buy a car
+            </div>
+          </a>
+    </video>
+    <!--
+    <div class="home_picture_slideshow_img">
+      <div id="home_box">
+        <div class="home_button_top">
+          Buy a Car
+        </div>
+        <div class="home_button_top" style="margin-top: 40px">
+          Sell a Car
+        </div>
+      </div>
+    </div>
 
     <div>
       <div class="home_abilities_box" id="home_abilities_box_first">
@@ -119,6 +146,8 @@
           Copyright &copy; 2018. &nbsp; Property of Eric Lin and Matthew Yu. &nbsp; Developed exclusively for WI18 CSE 134B
         </p>
       </div>
-    </div>
+    </div>-->
+    <script src = "index.js"></script>
+
   </body>
 </html>
