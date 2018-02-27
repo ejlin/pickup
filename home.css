@@ -155,17 +155,23 @@ video{
 
 .home_button
 {
-  color: #ce0300;
-  font-size: 20px;
+  color: white;
+  font-size: 18px;
   padding: 7.5px 20px 7.5px 20px;
-  border: 2px solid #ce0300;
   cursor: pointer;
-  width: 125px;
-  margin-top: 100px;
+  width: 150px;
+  margin-top: -200px;
   text-align: center;
-  margin-left: 100px;
+  margin-left: calc((100% - 400px)/2);
   float: left;
-  border-radius: 25px;
+  z-index: 2;
+  background-color: #6e7174;
+  opacity: 0.8;
+}
+
+#home_button_first
+{
+  margin-left: calc(((100% - 400px)/2) + 250px) ;
 }
 
 .home_abilities_box
@@ -198,17 +204,14 @@ video{
   color: white;
 }
 
-#home_button_first
-{
-  margin-left: calc((100% - 425px) / 2);
-}
-
 #home_footer_inside_box
 {
   width: 100%;
   min-width: 1300px;
   max-width: 1300px;
   margin-left: calc((100% - 1300px)/2);
+  z-index: 2;
+  position: relative;
 }
 
 .home_footer_inside_box_text
@@ -347,5 +350,7 @@ video{
   #home_footer
   {
     display: none;
+    z-index: 2;
+    position: relative;
   }
 }
