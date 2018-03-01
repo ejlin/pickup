@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link, IndexLink } from 'react-router';
-import { show_listing, hide_to_show, buy_car } from '../../js/buy.js';
 
 class BuyPage extends React.Component {
   
   render() {
     return (
       <div>
-        <img src={require('../../images/logo.png')} style={{"float": "left", "zIndex":"4", "position":"relative", "width":"50px", "marginLeft":"50px"}}/>
+                <Link to="/">
+        <img src={require('../../images/logo.png')} style={{"float": "left", "zIndex":"4", "position":"relative", "width":"50px", "marginLeft":"50px"}}/></Link>
         <nav style={{"backgroundColor": "#ce0300", "width":"105%", "height":"50px", "marginLeft":"-2.5%", "zIndex":"3", "position":"relative"}}>
           <IndexLink to="/chat" activeClassName="active" style={{"fontSize":"22px", "float": "right", "color":"white", "marginRight":"150px", "marginTop":"10px"}}>CHAT</IndexLink>
           <Link to="/buy" activeClassName="active" style={{"fontSize":"22px", "float": "right", "color":"white", "marginRight":"50px", "marginTop":"10px"}}>BUY</Link>
@@ -51,7 +51,7 @@ class BuyPage extends React.Component {
         <p className="buy_type_title" id="SPORT">
           Sport
         </p>
-        <div onClick={show_listing('../../images/sport_mercedes.png', 'Mercedes Benz SLS', '2014', 'Yellow', '34k Miles', '$188,800')} className="buy_type_image_box" id="buy_type_image_box_first">
+        <div onClick="show_listing('../../images/sport_mercedes.png', 'Mercedes Benz SLS', '2014', 'Yellow', '34k Miles', '$188,800')" className="buy_type_image_box" id="buy_type_image_box_first">
           <img src={require('../../images/sport_mercedes.png')} className="buy_type_image">
           </img>
           <p className="buy_type_image_text">Mercedes Benz SLS</p>
@@ -60,7 +60,7 @@ class BuyPage extends React.Component {
           <p className="buy_type_image_text">Color: Yellow</p>
           <p className="buy_type_image_text">Mileage: 34k miles</p>
         </div>
-        <div onClick={show_listing('../../images/sport_ferrari.png', 'Ferrari California', '2016', 'Blue', '6.5k Miles', '$140,200')} className="buy_type_image_box">
+        <div onClick="show_listing('../../images/sport_ferrari.png', 'Ferrari California', '2016', 'Blue', '6.5k Miles', '$140,200')" className="buy_type_image_box">
           <img src={require('../../images/sport_ferrari.png')} className="buy_type_image">
           </img>
           <p className="buy_type_image_text">Ferrari California</p>
@@ -69,7 +69,7 @@ class BuyPage extends React.Component {
           <p className="buy_type_image_text">Color: Blue</p>
           <p className="buy_type_image_text">Mileage: 6.5k miles</p>
         </div>
-        <div onClick={show_listing('../../images/sport_chevy.png', 'Chevrolet SS', '2017', 'red', '3.2k Miles', '$34,000')} className="buy_type_image_box">
+        <div onClick="show_listing('../../images/sport_chevy.png', 'Chevrolet SS', '2017', 'red', '3.2k Miles', '$34,000')" className="buy_type_image_box">
           <img src={require('../../images/sport_chevy.png')} className="buy_type_image">
           </img>
           <p className="buy_type_image_text">Chevrolet SS</p>
@@ -85,7 +85,7 @@ class BuyPage extends React.Component {
         <p className="buy_type_title" id="SEDAN">
           Sedan
         </p>
-        <div onClick={show_listing('../../images/sedan_honda.jpg', 'Honda Accord', '2017', 'Black', '7.8k Miles', '$26,500')} className="buy_type_image_box" id="buy_type_image_box_first">
+        <div onClick="show_listing('../../images/sedan_honda.jpg', 'Honda Accord', '2017', 'Black', '7.8k Miles', '$26,500')" className="buy_type_image_box" id="buy_type_image_box_first">
           <img src={require('../../images/sedan_honda.jpg')} className="buy_type_image">
           </img>
           <p className="buy_type_image_text">Honda Accord</p>
@@ -103,7 +103,7 @@ class BuyPage extends React.Component {
           <p className="buy_type_image_text">Color: Gray</p>
           <p className="buy_type_image_text">Mileage: 82k miles</p>
         </div>
-        <div onClick={show_listing('../../images/sedan_nissan.png', 'Nissan Sentra', '2014', 'White', '45k Miles', '$16,500')} className="buy_type_image_box">
+        <div onClick="show_listing('../../images/sedan_nissan.png', 'Nissan Sentra', '2014', 'White', '45k Miles', '$16,500')" className="buy_type_image_box">
           <img src={require('../../images/sedan_nissan.png')} className="buy_type_image">
           </img>
           <p className="buy_type_image_text">Nissan Sentra</p>
@@ -120,7 +120,7 @@ class BuyPage extends React.Component {
         <p className="buy_type_title" id="MINIVAN">
           Minivan
         </p>
-        <div onClick={show_listing('../../images/minivan_honda.png', 'Honda Odyssey', '2011', 'Red', '53k Miles', '$19,500')} className="buy_type_image_box" id="buy_type_image_box_first">
+        <div onClick="show_listing('../../images/minivan_honda.png', 'Honda Odyssey', '2011', 'Red', '53k Miles', '$19,500')" className="buy_type_image_box" id="buy_type_image_box_first">
           <img src={require('../../images/minivan_honda.png')} className="buy_type_image">
           </img>
           <p className="buy_type_image_text">Honda Odyssey</p>
@@ -129,7 +129,7 @@ class BuyPage extends React.Component {
           <p className="buy_type_image_text">Color: Red</p>
           <p className="buy_type_image_text">Mileage: 53k miles</p>
         </div>
-        <div onClick={show_listing('../../images/minivan_toyota.png', 'Toyota Sienna', '2015', 'Gold', '15k Miles', '$33,985')} className="buy_type_image_box">
+        <div onClick="show_listing('../../images/minivan_toyota.png', 'Toyota Sienna', '2015', 'Gold', '15k Miles', '$33,985')" className="buy_type_image_box">
           <img src={require('../../images/minivan_toyota.png')} className="buy_type_image">
           </img>
           <p className="buy_type_image_text">Toyota Sienna</p>
@@ -138,7 +138,7 @@ class BuyPage extends React.Component {
           <p className="buy_type_image_text">Color: Gold</p>
           <p className="buy_type_image_text">Mileage: 15k miles</p>
         </div>
-        <div onClick={show_listing('../../images/minivan_kia.png', 'Kia Sedona', '2017', 'Navy', '8k Miles', '$34,500')} className="buy_type_image_box">
+        <div onClick="show_listing('../../images/minivan_kia.png', 'Kia Sedona', '2017', 'Navy', '8k Miles', '$34,500')" className="buy_type_image_box">
           <img src={require('../../images/minivan_kia.png')} className="buy_type_image">
           </img>
           <p className="buy_type_image_text">Kia Sedona</p>
@@ -156,7 +156,7 @@ class BuyPage extends React.Component {
         <p className="buy_type_title" id="SUV">
           SUV
         </p>
-        <div onClick={show_listing('../../images/suv_lexus.png', 'Lexus RX', '2013', 'White', '60k Miles', '$20,220')} className="buy_type_image_box" id="buy_type_image_box_first">
+        <div onClick="show_listing('../../images/suv_lexus.png', 'Lexus RX', '2013', 'White', '60k Miles', '$20,220')" className="buy_type_image_box" id="buy_type_image_box_first">
           <img src={require('../../images/suv_lexus.png')} className="buy_type_image">
           </img>
           <p className="buy_type_image_text">Lexus RX</p>
@@ -165,7 +165,7 @@ class BuyPage extends React.Component {
           <p className="buy_type_image_text">Color: White</p>
           <p className="buy_type_image_text">Mileage: 60k miles</p>
         </div>
-        <div onClick={show_listing('../../images/suv_range_rover.png', 'Range Rover Evoque', '2013', 'White', '28k Miles', '$31,200')} className="buy_type_image_box">
+        <div onClick="show_listing('../../images/suv_range_rover.png', 'Range Rover Evoque', '2013', 'White', '28k Miles', '$31,200')" className="buy_type_image_box">
           <img src={require('../../images/suv_range_rover.png')} className="buy_type_image">
           </img>
           <p className="buy_type_image_text">Land Rover Range Rover Evoque</p>
@@ -174,7 +174,7 @@ class BuyPage extends React.Component {
           <p className="buy_type_image_text">Color: White</p>
           <p className="buy_type_image_text">Mileage: 28k miles</p>
         </div>
-        <div onClick={show_listing('../../images/suv_bmw.png', 'BMW X5', '2014', 'Black', '25k Miles', '$37,500')} className="buy_type_image_box">
+        <div onClick="show_listing('../../images/suv_bmw.png', 'BMW X5', '2014', 'Black', '25k Miles', '$37,500')" className="buy_type_image_box">
           <img src={require('../../images/suv_bmw.png')} className="buy_type_image">
           </img>
           <p className="buy_type_image_text">BMW X5</p>
@@ -191,7 +191,7 @@ class BuyPage extends React.Component {
         <p className="buy_type_title" id="HYBRID">
           Hybrid
         </p>
-        <div onClick={show_listing('../../images/hybrid_prius.png', 'Toyota Prius', '2018', 'Red', '100 Miles', '$32,250')} className="buy_type_image_box" id="buy_type_image_box_first">
+        <div onClick="show_listing('../../images/hybrid_prius.png', 'Toyota Prius', '2018', 'Red', '100 Miles', '$32,250')" className="buy_type_image_box" id="buy_type_image_box_first">
           <img src={require('../../images/hybrid_prius.png')} className="buy_type_image">
           </img>
           <p className="buy_type_image_text">Toyota Prius</p>
@@ -200,7 +200,7 @@ class BuyPage extends React.Component {
           <p className="buy_type_image_text">Color: Red</p>
           <p className="buy_type_image_text">Mileage: 100 miles</p>
         </div>
-        <div onClick={show_listing('../../images/hybrid_insight.png', 'Honda Insight', '2013', 'Silver', '41.4k Miles', '$13,558')} className="buy_type_image_box">
+        <div onClick="show_listing('../../images/hybrid_insight.png', 'Honda Insight', '2013', 'Silver', '41.4k Miles', '$13,558')" className="buy_type_image_box">
           <img src={require('../../images/hybrid_insight.png')} className="buy_type_image">
           </img>
           <p className="buy_type_image_text">Honda Insight</p>
@@ -209,7 +209,7 @@ class BuyPage extends React.Component {
           <p className="buy_type_image_text">Color: Silver</p>
           <p className="buy_type_image_text">Mileage: 41.4k miles</p>
         </div>
-        <div onClick={show_listing('../../images/hybrid_prius_phv.png', 'Toyota Prius Plug-In', '2013', 'Green', '22k Miles', '$16,500')} className="buy_type_image_box">
+        <div onClick="show_listing('../../images/hybrid_prius_phv.png', 'Toyota Prius Plug-In', '2013', 'Green', '22k Miles', '$16,500')" className="buy_type_image_box">
           <img src={require('../../images/hybrid_prius_phv.png')} className="buy_type_image">
           </img>
           <p className="buy_type_image_text">Toyota Prius Plug-In</p>
@@ -262,10 +262,10 @@ class BuyPage extends React.Component {
         <option value="2016">Financing</option>
         <option value="2015">Cash Payment</option>
       </select>
-      <div onClick={hide_to_show()} id="to_show_cancel_button">
+      <div onClick="hide_to_show()" id="to_show_cancel_button">
         Cancel
       </div>
-      <div onClick={buy_car()} id="to_show_buy_button">
+      <div onClick="buy_car()" id="to_show_buy_button">
         Buy
       </div>
     </div>

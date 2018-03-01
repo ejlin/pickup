@@ -19,7 +19,9 @@ class AboutPage extends React.Component {
   }
     return (
       <div>
-        <img src={require('../../images/logo.png')} style={{"float": "left", "zIndex":"4", "position":"relative", "width":"50px", "marginLeft":"50px"}}/>
+                        <Link to="/">
+
+        <img src={require('../../images/logo.png')} style={{"float": "left", "zIndex":"4", "position":"relative", "width":"50px", "marginLeft":"50px"}}/></Link>
         <nav style={{"backgroundColor": "#ce0300", "width":"105%", "height":"50px", "marginLeft":"-2.5%", "zIndex":"3", "position":"relative"}}>
           <IndexLink to="/chat" activeClassName="active" style={{"fontSize":"22px", "float": "right", "color":"white", "marginRight":"150px", "marginTop":"10px"}}>CHAT</IndexLink>
           <Link to="/buy" activeClassName="active" style={{"fontSize":"22px", "float": "right", "color":"white", "marginRight":"50px", "marginTop":"10px"}}>BUY</Link>

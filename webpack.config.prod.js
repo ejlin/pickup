@@ -30,7 +30,7 @@ export default {
   module: {
     loaders: [
       {test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel']},
-      {test: /\.(gif|png|jpe?g|svg)$/i, use: ['file-loader', {loader: 'image-webpack-loader', options: {bypassOnDebug: true,},},],},
+      {test: /\.(gif|png|jpe?g|svg)$/i, use: ['file-loader', {loader: 'image-webpack-loader', options: {bypassOnDebug: true}}]},
       {test: /\.html$/, loader: 'html-loader?attrs[]=video:src'}, 
       {test: /\.mp4$/, loader: 'url-loader?limit=10000&mimetype=video/mp4'},
       {test: /(\.css)$/, loader: ExtractTextPlugin.extract("css?sourceMap")},
